@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<script>
+    
+    function pulaLinha(){
+        document.write("<br />");
+        document.write("<br />");
+    }
+    
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    
+    
+    var idade1 = parseInt(prompt("Digite a primeira idade..."));
+    var idade2 = parseInt(prompt("Digite a primeira idade..."));
+    var idade3 = parseInt(prompt("Digite a primeira idade..."));
+    var idade4 = parseInt(prompt("Digite a primeira idade..."));
+    
+    var somaIdades = (idade1+idade2+idade3+idade4);
+    
+    var mediaIdades = somaIdades/4;
+    
+    mostra("A idade de Barney é: "+idade1);
+    mostra("A idade de Steve é: "+idade2);
+    mostra("A idade de Peter é: "+idade3);
+    mostra("A idade de Darius é: "+idade4);
+    
+    mostra("A soma das idades é: "+somaIdades);
+    mostra("A média das idades é: "+Math.round(mediaIdades));
+</script>
