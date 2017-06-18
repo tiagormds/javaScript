@@ -20,11 +20,20 @@
 
     var peso = parseFloat(prompt("Digite seu peso..."));
     var altura = parseFloat(prompt("Digite sua altura..."));
+    
+    imc = calculaIMC(peso, altura)
 
-    mostra("O seu <b>IMC</b> é: " + calculaIMC(peso, altura));
-
-    var pesoAmigo = parseFloat(prompt("Digite o peso do seu amigo..."));
-    var alturaAmigo = parseFloat(prompt("Digite a altura do seu amigo..."));
-
-    mostra("O <b>IMC</b> do seu amigo é: " + calculaIMC(pesoAmigo, alturaAmigo));
+    mostra("O seu <b>IMC</b> é: " + imc);
+    
+    if(imc < 18.5){
+       mostra("Seu IMC está baixo, vamos comer");
+    }
+    
+    if(imc >= 18.5 && imc <= 35){
+        mostra("Seu IMC está na média");   
+    }
+    
+    if(imc > 35){
+        mostra("Seu IMC está alto, vamos malhar!");
+    }
 </script>

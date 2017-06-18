@@ -16,5 +16,13 @@
     
     var totalDePontos = (vitorias * 3) + empates;
     
-    mostra("O total de pontos do "+nomeDoTime+" é: "+totalDePontos);
+    if(totalDePontos>28){
+        mostra("O total de ponto do <b>"+nomeDoTime+"</b> é: "+totalDePontos+", seu time está melhor que o ano passado!");
+    }
+    if(totalDePontos==28){
+        mostra("O total de ponto do <b>"+nomeDoTime+"</b> é: "+totalDePontos+", seu time está igual coisa do ano passado!");
+    }
+    if(totalDePontos<25){
+        mostra("O total de ponto do <b>"+nomeDoTime+"</b> é: "+totalDePontos+", seu time está pior que o ano passado!");
+    }
 </script>
