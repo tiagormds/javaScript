@@ -6,10 +6,19 @@
         document.write("<br />");
     }
     
-    Function mostra(frase){
+    function mostra(frase){
         document.write(frase);
         pulaLinha();
     }
     
+    var anoCopa = 1930;
+    var limiteAno = parseInt(prompt("Digite um limite de data: "));
+    
+    while(anoCopa <= limiteAno){
+        anoCopa = anoCopa+4;
+        mostra("Teve copa em: "+anoCopa);
+    }
+    
+    mostra("****************FIM******************")
     
 </script>

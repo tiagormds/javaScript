@@ -1,0 +1,20 @@
+<meta charset="utf-8"/>
+
+
+<script>
+    function pulaLinha(){
+        document.write("<br />");
+    }
+    
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var numeroTabuada = parseInt(prompt("Escolha o número da tabuada."));
+    
+    for(var numero = 1; numero <= 10; numero++){
+        var calculo = (numeroTabuada*numero);
+        mostra(numeroTabuada+" x "+numero+" = "+calculo);
+    }
+</script>
